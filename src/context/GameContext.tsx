@@ -127,6 +127,13 @@ const GameContextProvider = ({ children }: { children: ReactNode }) => {
     }
   }, [ball, bouncer, ballDirection]);
 
+  useEffect(() => {
+    if (gameOver) {
+      setResult(true);
+      setTimeout(() => setResult(false), 3000);
+    }
+  }, [gameOver]);
+
   return (
     <GameContext.Provider
       value={{

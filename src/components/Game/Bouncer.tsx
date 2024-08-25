@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useGameContext } from "../context/GameContext";
+import { useGameContext } from "../../context/GameContext";
 
 const Bouncer = () => {
   const { bouncer, gridUnit, bouncerUnit, move, gameOver, paused } =

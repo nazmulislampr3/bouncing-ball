@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { useGameContext } from "../context/GameContext";
+import { useGameContext } from "../../context/GameContext";
 
 const PlayControls = () => {
   const { move } = useGameContext()!;

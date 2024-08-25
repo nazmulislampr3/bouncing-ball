@@ -1,4 +1,4 @@
-import { useGameContext } from "../context/GameContext";
+import { useGameContext } from "../../context/GameContext";
 import Controls from "./Controls";
 
 const Board = () => {

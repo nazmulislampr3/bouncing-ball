@@ -1,4 +1,4 @@
-import { useGameContext } from "../context/GameContext";
+import { useGameContext } from "../../context/GameContext";
 
 const Controls = () => {
   const { pauseToggle, paused, gameOver, restart, played } = useGameContext()!;

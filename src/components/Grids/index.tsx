@@ -1,6 +1,6 @@
 import { useGameContext } from "../../context/GameContext";
-import Ball from "../../Game/Ball";
-import Bouncer from "../../Game/Bouncer";
+import Ball from "../Game/Ball";
+import Bouncer from "../Game/Bouncer";
 
 const Grids = () => {
   const { gridUnit } = useGameContext()!;
@@ -14,10 +14,7 @@ const Grids = () => {
       }}
     >
       {grids.map((_, index) => (
-        <div
-          className="w-full aspect-square border-slate-500"
-          key={index}
-        ></div>
+        <div className="w-full aspect-square border-slate-500" key={index} />
       ))}
       <Bouncer />
       <Ball />
