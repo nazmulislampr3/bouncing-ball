@@ -19,7 +19,7 @@ const PlayControls = () => {
     if (intervalRef.current) {
       return () => clearInterval(intervalRef.current);
     }
-  }, []);
+  }, [intervalRef]);
 
   return (
     <div className="flex gap-8 items-center justify-center">
