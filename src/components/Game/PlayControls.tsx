@@ -25,15 +25,15 @@ const PlayControls = () => {
     <div className="flex gap-8 items-center justify-center">
       <button
         className="moveBtn"
-        onMouseDown={() => handleMouseDown(() => move("left"))}
-        onMouseUp={handleMouseUp}
+        onTouchStart={() => handleMouseDown(() => move("left"))}
+        onTouchEnd={handleMouseUp}
       >
         <img src="/images/left-arrow.png" />
       </button>
       <button
         className="moveBtn"
-        onMouseDown={() => handleMouseDown(() => move("right"))}
-        onMouseUp={handleMouseUp}
+        onTouchStart={() => handleMouseDown(() => move("right"))}
+        onTouchEnd={handleMouseUp}
       >
         <img src="/images/left-arrow.png" className="rotate-180" />
       </button>
