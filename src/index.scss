@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  * {
+    @apply select-none;
+  }
+  .btn {
+    @apply font-bold text-sm lg:text-xl text-slate-200 px-5 py-2 lg:py-1.5 flex items-center justify-center gap-1.5 hover:opacity-80 disabled:opacity-80 w-28 lg:w-32;
+    img {
+      @apply size-3 aspect-square invert;
+    }
+  }
+  .moveBtn {
+    @apply py-3 px-6 bg-slate-600 hover:opacity-90;
+    img {
+      @apply size-3 invert;
+    }
+  }
+}
