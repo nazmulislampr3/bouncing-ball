@@ -28,14 +28,20 @@ const PlayControls = () => {
         onTouchStart={() => handleMouseDown(() => move("left"))}
         onTouchEnd={handleMouseUp}
       >
-        <img src="/images/left-arrow.png" />
+        <div className="img">
+          <img src="/images/left-arrow.png" />
+          <div className="click-blocker"></div>
+        </div>
       </button>
       <button
         className="moveBtn"
         onTouchStart={() => handleMouseDown(() => move("right"))}
         onTouchEnd={handleMouseUp}
       >
-        <img src="/images/left-arrow.png" className="rotate-180" />
+        <div className="img">
+          <img src="/images/left-arrow.png" className="rotate-180" />
+          <div className="click-blocker"></div>
+        </div>
       </button>
     </div>
   );
